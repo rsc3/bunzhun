@@ -1,3 +1,3 @@
 docker build --tag cuda121:latest .
 
-docker run -it cuda121:latest id -u
+docker run -it --gpus all cuda121:latest bash
