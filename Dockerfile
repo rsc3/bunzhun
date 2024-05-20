@@ -18,7 +18,7 @@ conda update -n base conda -y && \
 conda update --all -y && \
 conda create -n torchgpu jupyter matplotlib pandas scikit-learn -y && \
 conda activate torchgpu && \
-conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y"]
+conda install jupyterlab pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia -y"]
 
 RUN ["/bin/bash", "-c", "cat <(echo 'source /root/miniconda3/etc/profile.d/conda.sh') /root/.bashrc > /root/.newrc"]
 
